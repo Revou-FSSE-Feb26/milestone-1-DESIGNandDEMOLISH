@@ -1,1 +1,28 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/2AGu9A8s)
+# Welcome to My Biodata
+
+This is a simple project I created using **HTML** and **CSS**.  
+The purpose of this project is to practice building a basic webpage structure and applying semantic HTML elements.
+
+## Sections
+
+### Home
+This section introduces the website and gives visitors a short overview of the page.
+
+### About Me
+This section contains information about myself and what I am currently learning as a software engineering student.
+
+### Projects
+This section is intended to showcase the projects I create during my learning journey.  
+At the moment, I do not have any projects to display because I am still learning and practicing my skills.
+
+### Contact
+This section provides my contact information so visitors can reach out, give feedback, or connect with me.
+
+## Technologies Used
+- HTML
+- CSS
+
+## How to Run the Project
+1. Clone this repository.
+2. Open the project folder.
+3. Open the `index.html` file in your browser.
