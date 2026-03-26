@@ -4,21 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biodata</title>
-    <link rel="stylesheet" href="./CSS/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <link rel="stylesheet" href="./CSS/style.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @theme {
+        --font-serif: "Noto Serif", serif;
+      }
+    </style>
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a class="link" href="#home">Home</a></li>
-          <li><a class="link" href="#about-me">About Me</a></li>
-          <li><a class="link" href="#project">Projects</a></li>
-          <li><a class="link" href="#contact">Contact</a></li>
+  <body
+    class="bg-[url('/image/background-1.jpg')] scroll-smooth bg-center bg-cover bg-scroll text-gray-300 bg-black max-w-full"
+  >
+    <!-- header sudah selesai -->
+    <header class="sticky top-0 bg-gray-900">
+      <input type="checkbox" id="menu-toogle" class="hidden peer" />
+      <div>
+        <label
+          for="menu-toogle"
+          class="cursor-pointer text-3xl block px-3 py-1 md:hidden"
+          >&#9776;</label
+        >
+      </div>
+      <nav class="hidden peer-checked:block md:block">
+        <ul
+          class="bg-gray-900/80 px-4 py-10 w-auto flex flex-col gap-4 text-xl fixed md:relative md:h-[80px] md:flex-row md:justify-evenly md:items-center md:p-4"
+        >
+          <li>
+            <a class="mb-4 hover:text-red-500 hover:text-2xl" href="#home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="mb-4 hover:text-red-500 hover:text-2xl" href="#about-me"
+              >About Me</a
+            >
+          </li>
+          <li>
+            <a class="mb-4 hover:text-red-500 hover:text-2xl" href="#project"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a class="mb-4 hover:text-red-500 hover:text-2xl" href="#contact"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
-      <section id="home">
-        <h1>Welcome to My Biodata</h1>
-        <p class="p1">
+    </header>
+    <!-- edit main -->
+    <main>
+      <section id="home" class="m-4 rounded-4xl pb-2 shadow-xl/70 md:m-10">
+        <h1
+          class="font-serif text-3xl text-center rounded-4xl pt-10 mb-3 md:text-5xl shadow-xl/70 md:m-10 md:pb-2 md:shadow-xl/70"
+        >
+          Welcome to My Biodata
+        </h1>
+        <p
+          class="font-serif text-lg px-3 indent-6 text-justify mb-4 md:text-3xl md:px-20"
+        >
           Hello and welcome to my personal biodata webpage. This website is part
           of my first assignment at
           <a class="link" href="https://www.revou.co">RevoU</a> where I learned
@@ -33,17 +83,23 @@
           about me and my future projects.
         </p>
       </section>
-    </header>
-    <main>
-      <section id="about-me">
-        <h2>About Me</h2>
-        <div class="about-cont">
+      <section id="about-me" class="m-4 pb-2 rounded-4xl shadow-xl/70 md:m-10">
+        <h2
+          class="font-serif text-2xl text-center rounded-4xl mb-3 pt-10 md:text-4xl shadow-xl/70 md:m-10 md:pb-2 md:shadow-xl/70"
+        >
+          About Me
+        </h2>
+        <div class="">
+          <!-- <figure class="w-6xl h-6xl "> -->
           <img
+            class="rounded-full duration-300 w-32 h-32 m-2 mx-4 float-left md:ml-20 md:w-48 md:h-48 lg:w-56 lg:h-56"
             src="./image/mysterious-man-under-spotlight-businessman-with-no-identity-in-noir-concept-illustration-vector.jpg"
-            width="200"
             alt=""
           />
-          <p class="p2">
+          <!-- </figure> -->
+          <p
+            class="font-serif text-lg px-3 mb-4 indent-6 text-justify md:text-3xl md:px-20"
+          >
             My name is Alexander and I am currently learning
             <em>software engineering</em>. I am very interested in technology
             and how digital products are created. Right now I am focusing on
@@ -57,9 +113,15 @@
           </p>
         </div>
       </section>
-      <section id="project">
-        <h2>Projects</h2>
-        <p class="p3">
+      <section id="project" class="m-4 pb-2 rounded-4xl shadow-xl/70 md:m-10">
+        <h2
+          class="font-serif text-2xl text-center rounded-4xl mb-3 pt-10 md:text-4xl shadow-xl/70 md:m-10 md:pb-2 md:shadow-xl/70"
+        >
+          Projects
+        </h2>
+        <p
+          class="font-serif text-lg px-3 mb-4 indent-6 text-justify md:text-3xl md:px-20"
+        >
           This section will display the <strong>projects</strong> that I build
           during my learning journey. At the moment I am still focusing on
           learning the <em>fundamentals of web development</em>. Therefore, I do
@@ -73,39 +135,84 @@
         </p>
       </section>
     </main>
-    <footer>
-      <h2>Contacts</h2>
-      <address id="contact">
-        <fieldset>
-          <legend>Send a Messages</legend>
-          <form action="">
-            <div class="name-con">
-              <label for="name">Name:</label>
-              <input type="text" name="name" id="name" required minlength="3" />
-            </div>
-            <div class="email-con">
-              <label for="email">Email:</label>
-              <input type="email" name="email" id="email" required />
-            </div>
-            <div class="message-con">
-              <label for="Messages">Messages:</label>
-              <textarea
-                name="Messages"
-                id="Messages"
-                required
-                minlength="10"
-              ></textarea>
-            </div>
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-          </form>
-        </fieldset>
+    <!-- belum di edit -->
+    <footer
+      id="contact"
+      class="m-4 pb-2 rounded-4xl shadow-xl/70 md:m-10 md:shadow-xl/70"
+    >
+      <h2
+        class="font-serif text-2xl text-center rounded-4xl mb-3 pt-10 md:text-4xl shadow-xl/70 md:m-10 md:pb-2 md:shadow-xl/70"
+      >
+        Contacts
+      </h2>
+      <fieldset class="text-lg lg:text-2xl">
+        <legend class="indent-6 md:indent-20 lg:indent-40">
+          Send a Messages
+        </legend>
+        <form class="flex flex-col md:items-center" action="">
+          <div
+            class="m-4 pb-2 shadow-xl/70 flex rounded-4xl px-3 gap-4 md:m-10 md:shadow-xl/70 md:justify-center md:w-[300px] lg:w-[500px]"
+          >
+            <label for="name">Name:</label>
+            <input
+              class="border-b-4 border-b-white"
+              type="text"
+              name="name"
+              id="name"
+              required
+              minlength="3"
+            />
+          </div>
+          <div
+            class="m-4 pb-2 shadow-xl/70 flex rounded-4xl px-3 gap-4 md:m-10 md:shadow-xl/70 md:justify-center md:w-[300px] lg:w-[500px]"
+          >
+            <label for="email">Email:</label>
+            <input
+              class="border-b-4 border-b-white"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div
+            class="m-4 pb-2 shadow-xl/70 flex rounded-4xl px-3 gap-4 md:m-10 md:shadow-xl/70 md:justify-center md:w-[300px] lg:w-[500px]"
+          >
+            <label for="Messages">Messages:</label>
+            <textarea
+              class="resize-none border-l-3 border-b-3 border-white"
+              name="Messages"
+              id="Messages"
+              required
+              minlength="10"
+            ></textarea>
+          </div>
+          <div class="flex justify-center gap-5 md:gap-50">
+            <button
+              class="shadow-xl/80 cursor-pointer hover:text-red-500 hover:text-2xl rounded-4xl w-[150px] h-[50px]"
+              type="submit"
+            >
+              Submit
+            </button>
+            <button
+              class="shadow-xl/80 cursor-pointer hover:text-red-500 hover:text-2xl rounded-4xl w-[150px] h-[50px]"
+              type="reset"
+            >
+              Reset
+            </button>
+          </div>
+        </form>
+      </fieldset>
+      <address class="my-10 px-20 text-lg md:text-3xl">
+        <hr />
         <p>Contact Me in</p>
         <dl>
-          <dt>Phone:</dt>
-          <dd><a href="tel:+62">08**-***-***</a></dd>
-          <dt>Email:</dt>
-          <dd><a href="mailto:example@email.com">example@email.com</a></dd>
+          <dt>Phone :</dt>
+          <dd class="ml-8"><a href="tel:+62">08**-***-***</a></dd>
+          <dt>Email :</dt>
+          <dd class="ml-8">
+            <a href="mailto:example@email.com">example@email.com</a>
+          </dd>
         </dl>
       </address>
     </footer>
