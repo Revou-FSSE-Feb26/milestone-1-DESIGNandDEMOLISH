@@ -26,3 +26,6 @@ This section provides my contact information so visitors can reach out, give fee
 1. Clone this repository.
 2. Open the project folder.
 3. Open the `index.html` file in your browser.
+
+## Live Preview
+ https://revou-fsse-feb26.github.io/milestone-1-DESIGNandDEMOLISH/
