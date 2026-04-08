@@ -1,6 +1,6 @@
 # Welcome to My Biodata
 
-This is a simple project I created using **HTML** and **CSS**.  
+This is a simple project I created using **HTML** and **TAILWIND CSS**.  
 The purpose of this project is to practice building a basic webpage structure and applying semantic HTML elements.
 
 ## Sections

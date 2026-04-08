@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alexander | Protofolio</title>
+    <title>Alexander | Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,79 +17,83 @@
       }
     </style>
   </head>
-  <body
-    class="bg-[url('./image/background-1.jpg')] scroll-smooth bg-center bg-no-repeat bg-cover bg-scroll text-gray-300 bg-black max-w-full"
-  >
-    <header class="sticky top-0 bg-gray-900">
-      <input type="checkbox" id="menu-toogle" class="hidden peer" />
-      <div>
-        <label
-          for="menu-toogle"
-          class="cursor-pointer text-3xl block px-3 py-1 md:hidden"
-          >&#9776;</label
-        >
+  <body class="scroll-smooth text-gray-600 max-w-full">
+    <header>
+      <div class="md:grid md:grid-cols-[2fr_1fr]">
+        <div class="sticky top-0 items-center md:flex md:justify-between">
+          <input type="checkbox" id="menu-toogle" class="hidden peer" />
+          <div class="flex cursor-pointer">
+            <div>
+              <a
+                class="cursor-pointer font-bold text-xl pt-2 px-3 md:text-4xl md:ml-4"
+                href="#home"
+                >Alexander</a
+              >
+              <p class="text-sm pb-2 px-3 md:text-lg md:ml-4">
+                Software Engineer | Front-end
+              </p>
+            </div>
+            <label
+              for="menu-toogle"
+              class="cursor-pointer ml-auto text-3xl block px-3 py-1 md:hidden"
+              >&#9776;</label
+            >
+          </div>
+          <nav class="hidden peer-checked:block md:block">
+            <ul
+              class="bg-gray-400/20 right-[0] px-4 py-10 w-auto flex flex-col gap-4 text-xl fixed md:backdrop-blur-md md:relative md:h-[50px] md:flex-row md:justify-evenly md:items-center md:py-3 md:w-[400px] md:rounded-full lg:ml-5 xl:ml-20"
+            >
+              <li>
+                <a class="mb-4 hover:text-red-500" href="#home">Home</a>
+              </li>
+              <li>
+                <a class="mb-4 hover:text-red-500" href="#about-me">About Me</a>
+              </li>
+              <li>
+                <a class="mb-4 hover:text-red-500" href="#project">Projects</a>
+              </li>
+              <li>
+                <a class="mb-4 hover:text-red-500" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav class="hidden peer-checked:block md:block">
-        <ul
-          class="bg-gray-900/80 px-4 py-10 w-auto flex flex-col gap-4 text-xl fixed md:relative md:h-[80px] md:flex-row md:justify-evenly md:items-center md:p-4"
-        >
-          <li>
-            <a class="mb-4 hover:text-red-500" href="#home">Home</a>
-          </li>
-          <li>
-            <a class="mb-4 hover:text-red-500" href="#about-me">About Me</a>
-          </li>
-          <li>
-            <a class="mb-4 hover:text-red-500" href="#project">Projects</a>
-          </li>
-          <li>
-            <a class="mb-4 hover:text-red-500" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <main>
       <section
         id="home"
-        class="m-4 rounded-4xl pb-2 shadow-xl/70 shadow-white md:m-10"
+        class="bg-[url('./image/background1.jpg')] bg-cover bg-no-repeat bg-center min-h-screen flex flex-col justify-center m-4 rounded-4xl pb-2 shadow-xl/70 shadow-black md:m-10"
       >
         <h1
-          class="font-serif text-3xl text-center rounded-4xl pt-10 mb-3 md:text-5xl shadow-xl/70 shadow-white md:m-10 md:pb-2 md:shadow-xl/70"
+          class="font-serif text-6xl text-center pt-10 mb-3 md:text-8xl md:m-10 md:pb-2"
         >
-          Welcome to My Biodata
+          Hi, I'm Alex
         </h1>
         <p
           class="font-serif text-lg px-3 indent-6 text-justify mb-4 md:text-3xl md:px-20"
         >
-          Hello and welcome to my personal biodata webpage. This website is part
-          of my first assignment at
-          <a class="link" href="https://www.revou.co">RevoU</a> where I learned
-          how build a simple webpage using <strong>HTML and CSS</strong>. I
-          created this page to introduce myself and share my journey in learning
-          <em>software engineering</em>. Building this website helps me
-          understand the basic structure of web development. Although it is
-          still simple, it represents my first step into the world of
-          programming. I enjoy learning how different parts of a website work
-          together. Through practice and continuous learning, I hope to improve
-          my development skills. Feel free to explore this page to learn more
-          about me and my future projects.
+          Full-stack developer and aspiring software engineer passionate about
+          building scalable applications and applying machine learning to
+          real-world problems.
         </p>
       </section>
+
       <section
         id="about-me"
-        class="m-4 pb-2 rounded-4xl shadow-xl/70 shadow-white md:m-10"
+        class="min-h-screen flex flex-col justify-evenly m-4 pb-2 rounded-4xl shadow-xl/70 shadow-black md:m-10"
       >
         <h2
-          class="font-serif text-2xl text-center rounded-4xl mb-3 pt-10 md:text-4xl shadow-xl/70 shadow-white md:m-10 md:pb-2 md:shadow-xl/70"
+          class="font-serif text-2xl text-center rounded-4xl mb-3 pt-10 md:text-4xl shadow-xl/70 shadow-black md:m-10 md:pb-2 md:shadow-xl/70"
         >
           About Me
         </h2>
-        <div class="">
+        <div class="flex flex-col justify-center items-center lg:flex-row">
           <img
-            class="rounded-full duration-300 w-32 h-32 m-2 mx-4 float-left md:ml-20 md:w-48 md:h-48 lg:w-56 lg:h-56"
-            src="./image/mysterious-man.jpg"
-            alt="alx"
+            class="rounded-4xl duration-300 w-48 h-48 m-2 mx-4 max-w-100% md:ml-20 md:w-56 md:h-56 lg:w-86 lg:h-86"
+            src="./image/profile-image.jpg"
+            alt="alex"
           />
           <p
             class="font-serif text-lg px-3 mb-4 indent-6 text-justify md:text-3xl md:px-20"
@@ -98,21 +102,22 @@
             <em>software engineering</em>. I am very interested in technology
             and how digital products are created. Right now I am focusing on
             learning the fundamentals of web development. I am studying
-            <strong>HTML, CSS</strong>, and other basic programming concepts
-            step by step. Learning programming is challenging but also very
-            exciting for me. I enjoy solving problems and understanding how
+            <strong>HTML, TAILWIND CSS</strong>, and other basic programming
+            concepts step by step. Learning programming is challenging but also
+            very exciting for me. I enjoy solving problems and understanding how
             systems work. My goal is to continue improving my technical skills
             through practice and real projects. In the future, I hope to become
             a professional developer who can build useful applications.
           </p>
         </div>
       </section>
+
       <section
         id="project"
-        class="m-4 pb-2 rounded-4xl shadow-xl/70 shadow-white md:m-10"
+        class="min-h-screen flex flex-col justify-evenly m-4 pb-2 rounded-4xl shadow-xl/70 shadow-black md:m-10"
       >
         <h2
-          class="font-serif text-2xl text-center rounded-4xl mb-3 pt-10 md:text-4xl shadow-xl/70 shadow-white md:m-10 md:pb-2 md:shadow-xl/70"
+          class="font-serif text-2xl text-center rounded-4xl mb-3 pt-10 md:text-4xl shadow-xl/70 shadow-black md:m-10 md:pb-2 md:shadow-xl/70"
         >
           Projects
         </h2>
@@ -130,49 +135,65 @@
           experiments. These projects will represent my progress and experience
           as a developer.
         </p>
-        <article
-          class="grid grid-cols-2 justify-items-center gap-4 mb-4 md:ml-10 md:mb-8 md:gap-8 lg:m-4 lg:mb-8 lg:justify-evenly lg:flex lg:flex-warp"
+        <section
+          class="h-[616px] w-full px-2 grid grid-cols-3 grid-rows-3 gap-2 m-auto mb-4 md:h-[900px] md:w-[600px] md:mb-8 lg:h-[900px] lg:w-[900px] lg:mb-8 lg:justify-evenly xl:w-[1200px]"
         >
-          <div>
+          <article class="col-span-2">
             <h3 class="justify-self-center">Project-1</h3>
-            <img
-              class="w-32 h-32 rounded-xl md:w-48 md:h-48 lg:w-56 lg:h-56"
-              src="./image/Plus.jpg"
-              alt="plus"
-            />
-          </div>
-          <div>
+            <div
+              class="bg-[url('./image/project01.jpg')] h-[176px] rounded-xl hover:shadow-black hover:shadow-xl flex justify-center items-center bg-cover md:h-[276px]"
+            >
+              <img
+                class="w-32 h-32 opacity-30 object-cover rounded-xl md:w-48 md:h-48 lg:w-56 lg:h-56"
+                src="./image/Plus.jpg"
+                alt="newProject1"
+              />
+            </div>
+          </article>
+          <article class="row-span-2">
             <h3 class="justify-self-center">Project-2</h3>
-            <img
-              class="w-32 h-32 rounded-xl md:w-48 md:h-48 lg:w-56 lg:h-56"
-              src="./image/Plus.jpg"
-              alt="plus"
-            />
-          </div>
-          <div>
+            <div
+              class="bg-[url('./image/project02.jpg')] h-[385px] rounded-xl hover:shadow-black hover:shadow-xl flex justify-center items-center bg-cover md:h-[576px]"
+            >
+              <img
+                class="w-32 h-32 opacity-30 object-cover rounded-xl md:w-48 md:h-48 lg:w-56 lg:h-56"
+                src="./image/Plus.jpg"
+                alt="newProject2"
+              />
+            </div>
+          </article>
+          <article class="row-span-2">
             <h3 class="justify-self-center">Project-3</h3>
-            <img
-              class="w-32 h-32 rounded-xl md:w-48 md:h-48 lg:w-56 lg:h-56"
-              src="./image/Plus.jpg"
-              alt="plus"
-            />
-          </div>
-          <div>
+            <div
+              class="bg-[url('./image/project03.jpg')] h-[385px] rounded-xl hover:shadow-black hover:shadow-xl flex justify-center items-center bg-cover md:h-[576px]"
+            >
+              <img
+                class="w-32 h-32 opacity-30 object-cover rounded-xl md:w-48 md:h-48 lg:w-56 lg:h-56"
+                src="./image/Plus.jpg"
+                alt="newProject3"
+              />
+            </div>
+          </article>
+          <article class="col-span-2">
             <h3 class="justify-self-center">Project-4</h3>
-            <img
-              class="w-32 h-32 rounded-xl md:w-48 md:h-48 lg:w-56 lg:h-56"
-              src="./image/Plus.jpg"
-              alt="plus"
-            />
-          </div>
-        </article>
+            <div
+              class="bg-[url('./image/project04.jpg')] h-[176px] rounded-xl hover:shadow-black hover:shadow-xl flex justify-center items-center bg-cover md:h-[276px]"
+            >
+              <img
+                class="w-32 h-32 opacity-30 object-cover rounded-xl md:w-48 md:h-48 lg:w-56 lg:h-56"
+                src="./image/Plus.jpg"
+                alt="newProject4"
+              />
+            </div>
+          </article>
+        </section>
       </section>
       <section
         id="contact"
-        class="m-4 pb-2 rounded-4xl shadow-xl/70 shadow-white md:m-10"
+        class="min-h-screen flex flex-col justify-evenly m-4 pb-2 rounded-4xl shadow-xl/70 shadow-black md:m-10"
       >
         <h2
-          class="font-serif text-2xl text-center rounded-4xl mb-3 pt-10 md:text-4xl shadow-xl/70 shadow-white md:m-10 md:pb-2 md:shadow-xl/70"
+          class="font-serif text-2xl text-center rounded-4xl mb-3 pt-10 md:text-4xl shadow-xl/70 shadow-black md:m-10 md:pb-2"
         >
           Contacts
         </h2>
@@ -180,13 +201,13 @@
           <legend class="indent-6 md:indent-20 lg:indent-40">
             Send a Messages
           </legend>
-          <form class="flex flex-col md:items-center" action="">
+          <form class="flex flex-col md:items-center" action="/replay.html">
             <div
-              class="m-4 pb-2 shadow-xl/70 shadow-white flex rounded-4xl px-3 gap-4 md:m-10 md:shadow-xl/70 md:justify-center md:w-[300px] lg:w-[500px]"
+              class="mx-auto my-6 pb-2 shadow-xl/70 shadow-black flex rounded-4xl px-3 gap-4 md:m-10 md:justify-center md:w-[300px] lg:w-[500px]"
             >
-              <label for="name">Name:</label>
+              <label class="hover:text-red-500" for="name">Name:</label>
               <input
-                class="border-b-4 border-b-white"
+                class="border-b-4 rounded-xl border-black focus:outline-none focus:ring-0"
                 type="text"
                 name="name"
                 id="name"
@@ -195,11 +216,11 @@
               />
             </div>
             <div
-              class="m-4 pb-2 shadow-xl/70 shadow-white flex rounded-4xl px-3 gap-4 md:m-10 md:shadow-xl/70 md:justify-center md:w-[300px] lg:w-[500px]"
+              class="mx-auto my-6 pb-2 shadow-xl/70 shadow-black flex rounded-4xl px-3 gap-4 md:m-10 md:justify-center md:w-[300px] lg:w-[500px]"
             >
-              <label for="email">Email:</label>
+              <label class="hover:text-red-500" for="email">Email:</label>
               <input
-                class="border-b-4 border-b-white"
+                class="border-b-4 rounded-xl border-black focus:outline-none focus:ring-0"
                 type="email"
                 name="email"
                 id="email"
@@ -207,18 +228,18 @@
               />
             </div>
             <div
-              class="m-4 pb-2 shadow-xl/70 shadow-white flex rounded-4xl px-3 gap-4 md:m-10 md:shadow-xl/70 md:justify-center md:w-[300px] lg:w-[500px]"
+              class="mx-auto my-6 pb-2 shadow-xl/70 shadow-black flex rounded-4xl px-3 gap-4 md:m-10 md:justify-center md:w-[300px] lg:w-[500px]"
             >
-              <label for="Messages">Messages:</label>
+              <label class="hover:text-red-500" for="Messages">Messages:</label>
               <textarea
-                class="resize-none border-l-3 border-b-3 border-white"
+                class="resize-none border-b-4 rounded-xl border-black focus:outline-none focus:ring-0"
                 name="Messages"
                 id="Messages"
                 required
                 minlength="10"
               ></textarea>
             </div>
-            <div class="flex justify-center gap-5 md:gap-50">
+            <div class="flex mb-4 justify-center gap-5 md:gap-50">
               <button
                 class="shadow-xl/80 cursor-pointer hover:text-red-500 hover:text-2xl rounded-4xl w-[150px] h-[50px]"
                 type="submit"
@@ -237,9 +258,7 @@
       </section>
     </main>
 
-    <footer
-      class="m-4 pb-2 rounded-4xl shadow-xl/70 shadow-white md:m-10 md:shadow-xl/70"
-    >
+    <footer class="m-4 pb-2 rounded-4xl shadow-xl/70 shadow-black md:m-10">
       <address class="my-10 px-20 text-lg md:text-3xl">
         <hr />
         <p>Contact Me in</p>
