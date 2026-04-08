@@ -1,5 +1,5 @@
 # Alexander Portfolio
-
+---
 This is my personal portfolio website built using HTML and Tailwind CSS.
 The purpose of this project is to practice creating responsive layouts, using utility-first CSS, and structuring a multi-section webpage.
 
@@ -45,6 +45,6 @@ Contains additional contact information such as phone number and email.
 	2.	Open the project folder
 	3.	Open index.html in your browser
 
-Live Preview
+## Live Preview
 
 https://revou-fsse-feb26.github.io/milestone-1-DESIGNandDEMOLISH/
